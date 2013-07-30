@@ -1,0 +1,166 @@
+body
+{
+    margin: 1;
+    width: 98%;
+    height: 100%;
+    font-size: 14px;
+    background-color: #000000;
+    color: #999999;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+#header
+{
+    background-image: url(Images/logo.jpg);
+    border: none ; 
+    height: 109px ; 
+    width: 100%;
+    background-color: white ;
+}
+
+#header a
+{
+    height: 100pt;
+    width: 100%;
+    border: none ; 
+}
+
+#breadcrumb
+{
+    width: 100%;
+    height: 5%;
+    padding-left: 0.3em;
+}
+
+#main
+{
+    height: 75% ; 
+    width: 100% ;
+    text-align: center ; 
+}
+
+#sidebar
+{
+    height: 100%;
+    width: 20%;
+    float: left ;
+    text-align: left;
+}
+
+#menu
+{
+    text-align: left;
+    height: 75%;
+    background-color: GrayText;
+}  
+
+#loginarea
+{
+    height: 25% ; 
+    background-color: GrayText;
+    margin-top: 20px;
+}
+
+#content
+{
+    height: 100%;
+    width: 79%;
+    padding: 1 em;
+    border: 0px;
+    background-color: GrayText;
+    float: right;
+    color: black;
+}
+
+/* These following two rulesets should be applied to the CssClass properties of your
+   navigation menu.  You should be able to work out which class to
+   apply where from the names.  When you apply these rules you will get the appearance
+   and colour scheme described in the assessment.  */
+   
+.dynamicMenuItem, .staticMenuItem
+{
+    display: block;
+    width: 99.99%; /* for IE5 */;
+    background-color: #CCCCCC;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    padding: 0.2em;
+}
+.dynamicHoverStyle, .staticHoverStyle
+{
+    text-decoration: none;
+    color: #000000;
+    background-color: #CCCCCC;
+}
+
+.loginControl
+{ 
+    font-size: x-small; 
+    width: inherit ;
+}
+
+
+#footer
+{
+  height: 5%;
+  width: 100%;
+  clear: both ;
+  padding: 0em 0.3em 0em 0.3em;
+}
+
+#copyright
+{
+    float: left;
+}
+
+#lastupdate
+{
+    float: right; 
+}
+
+.leftalign
+{
+    text-align: left ; 
+}
+
+p, #menu h2, #menu h3
+{
+    padding: 5px ; 
+}
+
+/* The CSS rules below will style all hyperlinks outside of the menu. 
+   The menu links should be styled by the .dynamic rulesets.  Unfortunately
+   the rules below are a little clumsy, but I have to explicitly
+   exclude the menu div from the rules below otherwise they override the 
+   .dynamic classes applied to the menu control, and the hover doesn't 
+   quite work properly when styled by virtual classes.  */
+
+#breadcrumb a:link, #loginarea a:link, #footer a:link
+{
+    color: #000000 ;
+}
+#breadcrumb a:visited, #loginarea a:visited, #footer a:visited
+{
+    color: #CC9900 ;
+}
+
+#breadcrumb a:hover, #loginarea a:hover, #footer a:hover 
+{
+    color: yellow;
+}
+
+th
+{
+    height: 40px;
+}
+
+.ErrorMessage
+{
+    color: red;
+}
+
+
+
+
